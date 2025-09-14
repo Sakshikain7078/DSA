@@ -1,0 +1,12 @@
+class Solution:
+    def earliestTime(self, tasks: List[List[int]]) -> int:
+        # ans = float("inf")
+        # for i,j in tasks:
+        #     finish = min(ans, i+j)
+        # return finish
+
+
+        mini=float("inf")
+        for s,e in tasks:
+            mini=min(mini,s+e)
+        return mini
