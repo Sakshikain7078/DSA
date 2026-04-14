@@ -16,7 +16,6 @@ class Solution:
             A_eq[i, i*m : (i+1)*m] = 1
         b_eq = np.ones(n)
     
-        
         A_ub = np.zeros((m, n * m))
         for j in range(m):
             for i in range(n):
