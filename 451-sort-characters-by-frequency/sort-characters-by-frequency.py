@@ -1,0 +1,7 @@
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        count = Counter(s)
+        res = []
+        for char, freq in count.most_common():
+            res.append(char*freq)
+        return "".join(res)
